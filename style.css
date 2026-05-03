@@ -25,8 +25,9 @@ h1{
 table{
     text-align: center;
     margin:10px auto;
-    border-collapse:separate;
-    width: 80%;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
 }
 thead{
     background-color: rgba(90, 87, 82, 0.726);
@@ -35,6 +36,13 @@ tbody{
     background-color: rgba(125, 125, 125, 0.641);
     padding: 15px;
     border: 1px solid rgb(0, 0, 0);
+}
+.tabelacontainer {
+    width: 100%;
+    max-width: 100%; /* Impede que a div passe do tamanho da tela */
+    overflow-x: auto; /* Cria a rolagem APENAS aqui dentro */
+    -webkit-overflow-scrolling: touch; /* Melhora o toque no celular */
+    margin: 10px 0;
 }
 .tabela a{
     color: #174333;
@@ -48,6 +56,10 @@ tbody{
 }
 .tabela td{
     padding: 10px;
+}
+/* 3. Opcional: Garante que as bordas apareçam corretamente */
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
 }
 nav{
     position: fixed;
@@ -92,20 +104,26 @@ p{
     color: #ffff;
     text-shadow: 0 0 10px #000000;
 }
-.logo{
-    height: 10vh;
-    display: block;
-    margin: 0 auto;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; /* Ou o tamanho que preferir */
 }
+.logo{
+    width: 40%;
+ }
 .callofdutyjogo{
-    height: 50vh;
+    max-width: 200px;
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 video{
     display: block;
     margin: auto;
-    height: 600px;
+    width: 85%;
+    max-width: 300px ;
 }
 #inicio{
     padding-top: 80px;
@@ -120,8 +138,8 @@ video{
     padding-top: 80px;
 }
 .container{
-    display: flex;
-    gap: 30px;
+    display: flex !important;
+    gap: 1px;
     justify-content: center;
     max-width: 100%;
     width: auto;
@@ -132,25 +150,19 @@ video{
 }
 .card{
     text-align: center;
+    max-width: 100%;
+    background-color: transparent !important;
+    border: none !important;
 }
 h3{
     color: #ffffff;
     text-shadow: 0 0 15px #000000;
 }
 .todososcall{
-    height: 40vh;
+    max-width: 500px;
     padding-top: 50px;
     display: block;
-    margin: left;
-    padding-left: 60px;
-}
-.bloco{
-    display: flex;
-    align-items: center;
-    gap: 70px;
-}
-.texto {
-    max-width: 700px;
+    margin: auto;
 }
 h2{
     color: #ffffff;
@@ -164,6 +176,10 @@ h2{
     display: inline-block;
     transition: 0.3s;
     text-decoration: none;
+    width: 100%;
+    max-width: 300px !important; /* Impede que o botão fique muito largo em telas grandes */
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    text-align: center; /* Centraliza o texto no mobile */
 }
 .botao:hover{
     background-color: #3e3c3c;
@@ -187,6 +203,7 @@ footer{
     background-color: #0a1c15cc;
     margin-top: 40px;
     width: 100%;
+    padding: 20px 0;
 }
 footer a{
     text-decoration: none;
@@ -205,12 +222,16 @@ footer ul{
     height: 50px;
 }
 .seubotao{
-    padding: 15px 260px;
+    padding:  15px 20px;
     display: block;
     margin: 0 auto;
     transition: 0.3s;
     background-color: #0a1c15;
     color: #ffffff;
+    width: 100% !important;
+    max-width: 300px !important; /* Impede que o botão fique muito largo em telas grandes */
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    text-align: center; /* Centraliza o texto no mobile */
 }
 .seubotao:hover{
     background-color:#3e3c3c;

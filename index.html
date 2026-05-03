@@ -2,36 +2,63 @@
 <html>
     <head>
         <meta charset="UTF=8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Call of Duty</title>
         <meta name="description" content="História do Call of Duty, um dos jogos de tiro mais jogados do mundo">
+        <link rel="icon" href="img/download (1).jfif">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="download(1).jfif">
+
     </head>
 
     <body>
-    
-        <header>
-         <section>
-          <nav>
-            <ul>
-             <li><a href="#inicio">Início</a></li>
-             <li><a href="#lancamentos">Lançamentos</a></li>
-             <li><a href="#primeirojogo">Primeiro jogo</a></li>
-             <li><a href="#mudancas">Mudanças</a></li>
-             <li><a href="#contato">Contato</a></li>
-            </ul>
-          </nav>
-         </section>
-        </header>
+
+
+       <nav class="navbar navbar-expand-lg navbar-dark minha-nav fixed-top">
+  <div class="container-fluid">
+    <!-- Logotipo ou Nome do Site -->
+    <a class="navbar-brand" href="#">Call of Duty</a>
+
+    <!-- Botão Hambúrguer (Aparece apenas no mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meuMenuResponsivo" aria-controls="meuMenuResponsivo" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links do Menu (Colapsam no mobile e expandem no desktop) -->
+    <div class="collapse navbar-collapse" id="meuMenuResponsivo">
+      <!-- REMOVIDO: header, section e nav que estavam quebrando o Bootstrap -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#lancamentos">Lançamentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#primeirojogo">Primeiro jogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mudancas">Mudanças</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
         <img src="img/cod-logo.svg" class="logo" id="inicio">
-         <div class="bloco">
+       
         <img src="img/COD-20TH-ANNIVERSARY-023.jpg" class="todososcall">
-         <div class="texto">
-        <p>Você já deve ter ouvido falar de Call of Duty ou mesmo já deve ter jogado esse jogo na casa de alguém, nesse site vamos falar da trajetória desse jogo. Você tambêm verá a ordem, nome, história e objetivo de cada lançamento, então se você é fã de verdade continue lendo esse artigo e se aprofunde mais no conhecimento desse universo gamer, boa leitura!<br>Call of Duty foi criado pela Infinity Ward em 2002, um estúdio fundado por ex-desenvolvedores de Medal of Honor: Allied Assault. Os principais líderes e cocriadores foram Vince Zampella, Grant Collier e Jason West, com o jogo lançado pela Activision em 2003.Os principais criadores de Call of Duty em 2003 foram os fundadores da estúdio Infinity Ward, com destaque para Vince Zampella, Jason West e Grant Collier. A equipe, composta por ex-desenvolvedores de Medal of Honor: Allied Assault (da 2015, Inc.), foi financiada pela Activision para criar um novo jogo de tiro focado em esquadrões da Segunda Guerra Mundial.
-        </p></div>
-    </div>
+     
+        
+            <p>Você já deve ter ouvido falar de Call of Duty ou mesmo já deve ter jogado esse jogo na casa de alguém, nesse site vamos falar da trajetória desse jogo. Você tambêm verá a ordem, nome, história e objetivo de cada lançamento, então se você é fã de verdade continue lendo esse artigo e se aprofunde mais no conhecimento desse universo gamer, boa leitura!<br>Call of Duty foi criado pela Infinity Ward em 2002, um estúdio fundado por ex-desenvolvedores de Medal of Honor: Allied Assault. Os principais líderes e cocriadores foram Vince Zampella, Grant Collier e Jason West, com o jogo lançado pela Activision em 2003.Os principais criadores de Call of Duty em 2003 foram os fundadores da estúdio Infinity Ward, com destaque para Vince Zampella, Jason West e Grant Collier. A equipe, composta por ex-desenvolvedores de Medal of Honor: Allied Assault (da 2015, Inc.), foi financiada pela Activision para criar um novo jogo de tiro focado em esquadrões da Segunda Guerra Mundial.
+        </p>
+
         <div class="card">
         </div>
            <h2>Principais criadores de Call of Duty</h2>
@@ -66,6 +93,7 @@
 
         <section id="lancamentos">
             <h2>Todos os lançamentos em ordem cronológica de Call of Duty</h2>
+            <div class="tabelacontainer">
         <table border="1" class="tabela">
             <thead>
                 <tr>
@@ -314,6 +342,7 @@
             </tbody>
 
         </table>
+        </div>
     </section>
           
     <section id="primeirojogo">
@@ -368,10 +397,13 @@ Expansão: O jogo recebeu a expansão United Offensive, que complementa a narrat
        <footer>
          <p>Nos siga nas redes sociais!</p>
          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">You Tube</a></li>
+            <li><a href="https://www.instagram.com/callofduty?igsh=ODZ6cXhtdnJ5dHI0" target="_blank">Instagram</a></li>
+            <li><a href="https://youtube.com/@callofduty?si=On1TUdpeNetGIZAP" target="_blank">You Tube</a></li>
             <p>&copy;Fanclub Call of Duty- 2026 todos os direitos reservados</p>
          </ul>
        </footer>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+       
     </body>
 </html>
