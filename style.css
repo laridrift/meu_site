@@ -2,15 +2,32 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/Campo\ de\ batalha\ urbano\ devastado.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-top: 80px;
+body {
     margin: 0;
+    padding: 0;
 }
+
+/* Criamos um fundo "falso" que fica travado no fundo da tela */
+body::before {
+    content: "";
+    position: fixed; /* Trava o fundo na tela do celular */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;      /* Joga a imagem para trás do seu conteúdo */
+    
+    /* Sua imagem e configurações de tamanho */
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/Campo\ de\ batalha\ urbano\ devastado.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Garante alta performance de rolagem em celulares */
+    will-change: transform;
+}
+
+
 h1{
     color: #ffffff;
     font-family:'Arial Black', Impact, sans-serif;
@@ -26,7 +43,7 @@ table{
     text-align: center;
     margin:10px auto;
     border-collapse: collapse;
-    width: 80%;
+    max-width: 85%;
     min-width: 8px;
 }
 thead{
