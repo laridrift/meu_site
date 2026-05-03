@@ -26,8 +26,8 @@ table{
     text-align: center;
     margin:10px auto;
     border-collapse: collapse;
-    width: 100%;
-    min-width: 800px;
+    width: 80%;
+    min-width: 8px;
 }
 thead{
     background-color: rgba(90, 87, 82, 0.726);
