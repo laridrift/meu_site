@@ -6,8 +6,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Criamos um fundo "falso" que fica travado no fundo da tela */
 body::before {
     content: "";
     position: fixed; /* Trava o fundo na tela do celular */
@@ -26,8 +24,6 @@ body::before {
     /* Garante alta performance de rolagem em celulares */
     will-change: transform;
 }
-
-
 h1{
     color: #ffffff;
     font-family:'Arial Black', Impact, sans-serif;
